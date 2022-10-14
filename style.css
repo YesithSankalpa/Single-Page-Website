@@ -33,13 +33,16 @@ header {
 .logo {
 	color: #fff;
 	font-weight: bold;
-	text-align: undefined;
+	text-align: center;
 	width: 10%;
 	float: left;
-	margin-top: 15px;
+	margin-top: 5px;
 	margin-left: 25px;
 	letter-spacing: 4px;
 	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 nav {
@@ -281,5 +284,20 @@ footer {
 
 	.footer_column {
 		width: 100%;
+	}
+}
+
+.gear {
+	width: 40px;
+	animation: rotate infinite linear 5s;
+}
+
+@keyframes rotate {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
 	}
 }
